@@ -5,14 +5,14 @@ Compression plugin for [Hono](https://github.com/honojs/hono)
 ## Installation
 
 ```bash
-bun add bun-compression
+bun add bun-compressor
 ```
 
 ## Example
 
 ```typescript
 import { Hono } from 'hono'
-import { compress } from 'bun-compression'
+import { compress } from 'bun-compressor'
 
 const app = new Hono()
 
@@ -46,4 +46,4 @@ The encoding of the response body that is being compressed.
 
 ## Acknowledgments
 
-This project is inspired by [elysia-compression](https://github.com/gusb3ll/elysia-compression) by [gusb3ll](https://github.com/gusb3ll). Adaptations have been made to support Hono.
+The project is a fork of the original repository "bun-compression" available at [bun-compression](https://github.com/sunneydev/bun-compression). The fork aims to build upon the existing codebase, possibly adding new features, fixing bugs, or adapting the code to suit specific requirements.
