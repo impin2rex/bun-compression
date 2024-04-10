@@ -20,7 +20,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/impin2rex/bun-compression"
+    "url": "git+https://github.com/impin2rex/bun-compression.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Shyft-to/txn-parser/issues"
+  },
+  "homepage": "https://impin2rex.github.io",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   },
   "exports": {
     "bun": "./dist/index.js",
