@@ -1,0 +1,26 @@
+name: bun-compressor
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout to repository
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+
+      - name: Install dependencies
+        run: npm install
+        env:
+          GITHUB_PKG_READ_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
+
+
+      - name: Generate a build
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - run: npm run build
